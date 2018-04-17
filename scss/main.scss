@@ -38,24 +38,39 @@ header {
                     font-weight: 700;
                 }
             }
+            @media only screen and (max-width: 562px) {
+                display: none;
+            }
         }
     }
     .about {
         margin: 430px 26px;
+        @media only screen and (max-width: 562px) {
+            margin: 300px 26px;
+        }
         h1 {
             width: 95px;
             background-color: white;
             padding: 4px;
+            @media only screen and (max-width: 727px) {
+                width: 95px;
+            }
         }
         p {
             width: 515px;
             background-color: white;
             padding: 4px;
+            @media only screen and (max-width: 727px) {
+                width: 300px;
+            }
+            @media only screen and (max-width: 562px) {
+                width: 250px;
+            }
         }
     }
 }
 
-.stack{
+.stack {
     border-radius: 5px;
     padding: 50px;
 }
@@ -70,24 +85,33 @@ header {
         margin: 16px;
         padding: 25px 0;
         justify-content: space-around;
+        @media only screen and (max-width: 727px) {
+            display: block;
+        }
         img {
             width: 50%;
             height: 300px;
             border-radius: 5px;
             box-shadow: 1px 3px 15px 6px #899094;
+            @media only screen and (max-width: 727px) {
+                width: 100%;
+            }
         }
         .text {
             width: 30%;
+            @media only screen and (max-width: 727px) {
+                width: 100%;
+            }
         }
     }
     .port-last {
         border-bottom: none;
     }
-    .port-first{
+    .port-first {
         margin: 16px;
         padding: 45px 60px;
     }
-    h3{
+    h3 {
         background-color: white;
         padding: 7px;
         width: 130px;
@@ -101,15 +125,21 @@ footer {
     text-align: center;
     .contact {
         margin: 0 auto;
-        width: 700px;
+        width: 500px;
         padding: 50px;
         display: flex;
         justify-content: space-around;
+        @media only screen and (max-width: 562px) {
+            width: 280px;
+        }
     }
-    p{
+    p {
         margin: 0 auto;
         background-color: white;
         width: 450px;
         padding: 10px;
+        @media only screen and (max-width: 562px) {
+            width: 250px;
+        }
     }
 }
