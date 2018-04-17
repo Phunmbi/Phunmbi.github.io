@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  margin: 20px; }
+
+header {
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg3.jpg");
+  background-size: cover;
+  border-radius: 5px; }
+  header .name {
+    justify-content: space-between;
+    display: flex; }
+    header .name div {
+      margin-left: 16px; }
+      header .name div p {
+        background: white;
+        padding: 6px;
+        font-weight: 700; }
+    header .name nav {
+      list-style: none;
+      display: flex;
+      justify-content: space-around; }
+      header .name nav a {
+        text-decoration: none;
+        color: black; }
+        header .name nav a li {
+          margin: 16px;
+          background: white;
+          padding: 6px;
+          font-weight: 700; }
+  header .about {
+    margin: 430px 26px; }
+    header .about h1 {
+      width: 95px;
+      background-color: white;
+      padding: 4px; }
+    header .about p {
+      width: 515px;
+      background-color: white;
+      padding: 4px; }
+
+.stack {
+  border-radius: 5px;
+  padding: 50px; }
+
+.portfolio {
+  background-color: #E1EDF6;
+  border-radius: 5px; }
+  .portfolio .port,
+  .portfolio .port-last {
+    border-bottom: 1px solid #9CAEA9;
+    display: flex;
+    margin: 16px;
+    padding: 25px 0;
+    justify-content: space-around; }
+    .portfolio .port img,
+    .portfolio .port-last img {
+      width: 50%;
+      height: 300px;
+      border-radius: 5px;
+      box-shadow: 1px 3px 15px 6px #899094; }
+    .portfolio .port .text,
+    .portfolio .port-last .text {
+      width: 30%; }
+  .portfolio .port-last {
+    border-bottom: none; }
+  .portfolio .port-first {
+    margin: 16px;
+    padding: 45px 60px; }
+  .portfolio h3 {
+    background-color: white;
+    padding: 7px;
+    width: 130px; }
+
+footer {
+  padding: 25px;
+  background-color: #D0E3C4;
+  border-radius: 5px;
+  text-align: center; }
+  footer .contact {
+    margin: 0 auto;
+    width: 700px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around; }
+  footer p {
+    margin: 0 auto;
+    background-color: white;
+    width: 450px;
+    padding: 10px; }
+
+/*# sourceMappingURL=main.css.map */
