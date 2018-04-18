@@ -6,36 +6,40 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     margin: 20px;
+    @media only screen and (max-width: 562px) {
+        margin: 10px;
+    }
 }
 
 header {
-    height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg3.jpg");
+    min-height: calc(100vh - 40px);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/bg.jpg");
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 5px;
     .name {
-        justify-content: space-between;
         display: flex;
+        justify-content: space-around;
+        font-weight: 700;
         div {
-            margin-left: 16px;
             p {
                 background: white;
                 padding: 6px;
-                font-weight: 700;
             }
         }
         nav {
-            list-style: none;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            list-style: none;
             a {
                 text-decoration: none;
                 color: black;
+                margin: 14px;
                 li {
-                    margin: 16px;
                     background: white;
                     padding: 6px;
-                    font-weight: 700;
                 }
             }
             @media only screen and (max-width: 562px) {
@@ -44,14 +48,14 @@ header {
         }
     }
     .about {
-        margin: 430px 26px;
-        @media only screen and (max-width: 562px) {
-            margin: 300px 26px;
-        }
+        display: flex;
+        justify-content: center;
+        margin: 240px 0 20px 0;
+        
         h1 {
             width: 95px;
             background-color: white;
-            padding: 4px;
+            padding: 3px;
             @media only screen and (max-width: 727px) {
                 width: 95px;
             }
@@ -59,7 +63,7 @@ header {
         p {
             width: 515px;
             background-color: white;
-            padding: 4px;
+            padding: 3px;
             @media only screen and (max-width: 727px) {
                 width: 300px;
             }
@@ -70,11 +74,6 @@ header {
     }
 }
 
-.stack {
-    border-radius: 5px;
-    padding: 50px;
-}
-
 .portfolio {
     background-color: #E1EDF6;
     border-radius: 5px;
@@ -83,22 +82,28 @@ header {
         border-bottom: 1px solid #9CAEA9;
         display: flex;
         margin: 16px;
-        padding: 25px 0;
-        justify-content: space-around;
+        padding: 25px 2px;
+        justify-content: space-between;
         @media only screen and (max-width: 727px) {
             display: block;
+            padding: 15px 0;
+            border-bottom: 1px solid #9CAEA9;
         }
         img {
             width: 50%;
-            height: 300px;
-            border-radius: 5px;
+            height: 300px; // border-radius: 5px;
             box-shadow: 1px 3px 15px 6px #899094;
             @media only screen and (max-width: 727px) {
                 width: 100%;
+                height: 300px;
+            }
+            @media only screen and (max-width: 562px) {
+                width: 100%;
+                height: 200px;
             }
         }
         .text {
-            width: 30%;
+            width: 40%;
             @media only screen and (max-width: 727px) {
                 width: 100%;
             }
@@ -108,8 +113,12 @@ header {
         border-bottom: none;
     }
     .port-first {
-        margin: 16px;
-        padding: 45px 60px;
+        margin: 10px;
+        padding: 45px 5px;
+        border-bottom: 1px solid #9CAEA9;
+        @media only screen and (max-width: 562px) {
+            padding: 20px 5px;
+        }
     }
     h3 {
         background-color: white;
@@ -125,12 +134,14 @@ footer {
     text-align: center;
     .contact {
         margin: 0 auto;
-        width: 500px;
+        width: 600px;
         padding: 50px;
         display: flex;
         justify-content: space-around;
-        @media only screen and (max-width: 562px) {
-            width: 280px;
+        @media only screen and (max-width: 662px) {
+            justify-content: space-between;
+            padding: 50px 0;
+            width: 270px;
         }
     }
     p {
@@ -139,7 +150,7 @@ footer {
         width: 450px;
         padding: 10px;
         @media only screen and (max-width: 562px) {
-            width: 250px;
+            width: 270px;
         }
     }
 }

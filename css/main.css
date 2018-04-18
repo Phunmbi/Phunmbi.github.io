@@ -5,62 +5,60 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   margin: 20px; }
+  @media only screen and (max-width: 562px) {
+    body {
+      margin: 10px; } }
 
 header {
-  height: 95vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg3.jpg");
+  min-height: calc(100vh - 40px);
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/bg.jpg");
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   border-radius: 5px; }
   header .name {
-    justify-content: space-between;
-    display: flex; }
-    header .name div {
-      margin-left: 16px; }
-      header .name div p {
-        background: white;
-        padding: 6px;
-        font-weight: 700; }
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700; }
+    header .name div p {
+      background: white;
+      padding: 6px; }
     header .name nav {
-      list-style: none;
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-between;
+      list-style: none; }
       header .name nav a {
         text-decoration: none;
-        color: black; }
+        color: black;
+        margin: 14px; }
         header .name nav a li {
-          margin: 16px;
           background: white;
-          padding: 6px;
-          font-weight: 700; }
+          padding: 6px; }
       @media only screen and (max-width: 562px) {
         header .name nav {
           display: none; } }
   header .about {
-    margin: 430px 26px; }
-    @media only screen and (max-width: 562px) {
-      header .about {
-        margin: 300px 26px; } }
+    display: flex;
+    justify-content: center;
+    margin: 240px 0 20px 0; }
     header .about h1 {
       width: 95px;
       background-color: white;
-      padding: 4px; }
+      padding: 3px; }
       @media only screen and (max-width: 727px) {
         header .about h1 {
           width: 95px; } }
     header .about p {
       width: 515px;
       background-color: white;
-      padding: 4px; }
+      padding: 3px; }
       @media only screen and (max-width: 727px) {
         header .about p {
           width: 300px; } }
       @media only screen and (max-width: 562px) {
         header .about p {
           width: 250px; } }
-
-.stack {
-  border-radius: 5px;
-  padding: 50px; }
 
 .portfolio {
   background-color: #E1EDF6;
@@ -70,25 +68,32 @@ header {
     border-bottom: 1px solid #9CAEA9;
     display: flex;
     margin: 16px;
-    padding: 25px 0;
-    justify-content: space-around; }
+    padding: 25px 2px;
+    justify-content: space-between; }
     @media only screen and (max-width: 727px) {
       .portfolio .port,
       .portfolio .port-last {
-        display: block; } }
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #9CAEA9; } }
     .portfolio .port img,
     .portfolio .port-last img {
       width: 50%;
       height: 300px;
-      border-radius: 5px;
       box-shadow: 1px 3px 15px 6px #899094; }
       @media only screen and (max-width: 727px) {
         .portfolio .port img,
         .portfolio .port-last img {
-          width: 100%; } }
+          width: 100%;
+          height: 300px; } }
+      @media only screen and (max-width: 562px) {
+        .portfolio .port img,
+        .portfolio .port-last img {
+          width: 100%;
+          height: 200px; } }
     .portfolio .port .text,
     .portfolio .port-last .text {
-      width: 30%; }
+      width: 40%; }
       @media only screen and (max-width: 727px) {
         .portfolio .port .text,
         .portfolio .port-last .text {
@@ -96,8 +101,12 @@ header {
   .portfolio .port-last {
     border-bottom: none; }
   .portfolio .port-first {
-    margin: 16px;
-    padding: 45px 60px; }
+    margin: 10px;
+    padding: 45px 5px;
+    border-bottom: 1px solid #9CAEA9; }
+    @media only screen and (max-width: 562px) {
+      .portfolio .port-first {
+        padding: 20px 5px; } }
   .portfolio h3 {
     background-color: white;
     padding: 7px;
@@ -110,13 +119,15 @@ footer {
   text-align: center; }
   footer .contact {
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
     padding: 50px;
     display: flex;
     justify-content: space-around; }
-    @media only screen and (max-width: 562px) {
+    @media only screen and (max-width: 662px) {
       footer .contact {
-        width: 280px; } }
+        justify-content: space-between;
+        padding: 50px 0;
+        width: 270px; } }
   footer p {
     margin: 0 auto;
     background-color: white;
@@ -124,6 +135,6 @@ footer {
     padding: 10px; }
     @media only screen and (max-width: 562px) {
       footer p {
-        width: 250px; } }
+        width: 270px; } }
 
 /*# sourceMappingURL=main.css.map */
