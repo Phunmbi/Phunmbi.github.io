@@ -98,6 +98,10 @@ header {
         .portfolio .port .text,
         .portfolio .port-last .text {
           width: 100%; } }
+      .portfolio .port .text a,
+      .portfolio .port-last .text a {
+        text-decoration: none;
+        color: #7493d6; }
   .portfolio .port-last {
     border-bottom: none; }
   .portfolio .port-first {

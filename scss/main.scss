@@ -106,6 +106,10 @@ header {
             @media only screen and (max-width: 727px) {
                 width: 100%;
             }
+            a{
+                text-decoration: none;
+                color: rgb(136, 170, 243);
+            }
         }
     }
     .port-last {
